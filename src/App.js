@@ -4,17 +4,21 @@ import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import AllNews from './Pages/AllNews/AllNews';
 import ErrorPage from './Pages/Errorpage/ErrorPage';
+import { 
+  Nav,
+  NavItems,
+ } from './App.element.js'
 
 function App() {
   return (
     <Router>
       <div className='app'>
       <div className='page-wrapper'></div>
-      <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        <Link to='/allNews'>All News</Link>
-      </nav>
+      <Nav>
+          <NavItems><Link to='/'>Home</Link></NavItems>
+          <NavItems><Link to='/about'>About</Link></NavItems>
+          <NavItems><Link to='/allNews'>All News</Link></NavItems>
+      </Nav>
       <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
