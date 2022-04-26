@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Landing = styled.main`
     border: blue solid 1px;
-    width: 100vw;
-    height: 100px;
+    width: 100%;
+    padding: 10px;
 `
 export const SideBar = styled.div`
     border: blue solid 1px;
