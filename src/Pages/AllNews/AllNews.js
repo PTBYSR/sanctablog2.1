@@ -1,22 +1,23 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, useParams} from 'react-router-dom'
 import { 
   AllNewsSection,
  } from './AllNews.element';
  import NewsPost from './NewsPost/NewsPost'
 
 function AllNews() {
+  let {id} = useParams();
   return (
     <AllNewsSection>
-      <Router>
-        <Routes>
-          <Route>
-            <Link path='/:username'>
-              <NewsPost />
+            <Link to='allnews/'>
+              hi
             </Link>
-          </Route>
-        </Routes>
-      </Router>
+            <Link to='allnews/'>
+              hi
+            </Link>
+            <Link to='allnews/'>
+              hi
+            </Link>
     </AllNewsSection>
   )
 }

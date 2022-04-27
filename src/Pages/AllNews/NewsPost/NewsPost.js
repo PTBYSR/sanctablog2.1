@@ -1,14 +1,16 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 import { 
     NewsPostSection,
  }  from './NewsPost.element'
+ import { NewsPostData } from './NewsPostData'
 
 function NewsPost() {
-  let {newspost} = useParams();
+  const { id } = useParams();
   return (
     <NewsPostSection>
-      this is the {newspost}
+      <h1>{NewsPostData[id - 1].title}</h1>
+      <p>{NewsPostData[id - 1].description}</p>
     </NewsPostSection>
   )
 }

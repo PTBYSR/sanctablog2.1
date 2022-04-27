@@ -13,7 +13,7 @@ function Nav() {
           <Link to="/about">About</Link>
         </NavItem>
         <NavItem>
-          <Link to="/allNews">All News</Link>
+          <Link to="/allnews/list">All News</Link>
         </NavItem>
       </NavItems>
       <NewsCarousel>
