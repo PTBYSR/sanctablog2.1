@@ -44,6 +44,8 @@ body {
   background: var(--clr-light); */
   line-height: 1.5;
   min-height: 100vh;
+  background-color: #cdc6be;
+
 }
 
 /* make images easier to use */
@@ -116,19 +118,17 @@ them using inline css */
 .page-wrapper {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   background-image: url("paper-wallpaper.jpg");
-  /* background-repeat: repeat; */
-  background-attachment: fixed;
-  height: 100vh;
   opacity: 0.7;
-  z-index: 1;
+  z-index: -1;
   opacity: .3;
 }
 
 .app {
   height: 100vh;
   border: 1px blue solid;
-  background-color: #cdc6be;
-  z-index: -1000;
 }
