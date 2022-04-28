@@ -8,7 +8,7 @@ import {
 function NewsPost() {
   const { id } = useParams();
   return (
-    <NewsPostSection>
+    <NewsPostSection className='flex '>
       <h1>{NewsPostData[id - 1].title}</h1>
       <p>{NewsPostData[id - 1].description}</p>
     </NewsPostSection>
