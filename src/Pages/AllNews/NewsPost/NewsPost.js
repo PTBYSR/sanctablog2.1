@@ -9,7 +9,6 @@ function NewsPost() {
   const { id } = useParams();
   return (
     <NewsPostSection>
-      <h1>HIIIIII</h1>
       <h1>{NewsPostData[id - 1].title}</h1>
       <p>{NewsPostData[id - 1].description}</p>
     </NewsPostSection>
