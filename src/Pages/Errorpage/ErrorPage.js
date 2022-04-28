@@ -1,8 +1,13 @@
 import React from 'react'
+import { 
+  ErrorPageSection,
+ } from './ErrorPage.element'
 
 function ErrorPage() {
   return (
-    <div>Errorrrrrrrrrrrrrr</div>
+    <ErrorPageSection>
+      Errorrrrrrrrrrrrrr
+    </ErrorPageSection>
   )
 }
 
