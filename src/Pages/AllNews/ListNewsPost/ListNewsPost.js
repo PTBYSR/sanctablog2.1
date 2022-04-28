@@ -9,8 +9,10 @@ function ListNewsPost() {
         {NewsPostData.map((post) => {
             return(
                 <div
+                    style={{border: '1px solid pink'}}
                     onClick={() => {
                         navigate(`/allnews/${post.id}`)
+                        alert('hey')
                     }}
                 >
                     <h1>{post.title}</h1>
