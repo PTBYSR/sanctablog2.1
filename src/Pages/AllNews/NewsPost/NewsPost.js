@@ -10,7 +10,7 @@ function NewsPost() {
   return (
     <NewsPostSection className='flex '>
       <h1>{NewsPostData[id - 1].title}</h1>
-      <h1>{NewsPostData[id - 1].image}</h1>
+      <h1>{NewsPostData[id - 1].image} hiyo</h1>
       <p>{NewsPostData[id - 1].description}</p>
     </NewsPostSection>
   )
