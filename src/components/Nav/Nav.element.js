@@ -12,6 +12,7 @@ export const NavItems = styled.ul`
 
 `
 export const NavItem = styled.li`
+    background-image: url("./bookmark.png");
     list-style: none;
     text-transform: uppercase;
 `

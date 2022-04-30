@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { NavSection, NavItems, NavItem, NewsCarousel } from "./Nav.element";
 
+
 function Nav() {
   return (
     <NavSection className="flex">
@@ -16,9 +17,9 @@ function Nav() {
           <Link to="/allnews/list">All News</Link>
         </NavItem>
       </NavItems>
-      <NewsCarousel>
+      {/* <NewsCarousel>
         <p>all my friends are dead, push me to the end</p>
-      </NewsCarousel>
+      </NewsCarousel> */}
     </NavSection>
   );
 }
