@@ -17,4 +17,10 @@ export const NewsPostData = [
         title: "Heading 3",
         description: "this is the news 3 description",
     },
+    {
+        id: 4,
+        image: 'image',
+        title: "Heading 4",
+        description: "this is the news 4 description",
+    },
 ];
