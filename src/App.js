@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className='page-wrapper'></div>
       <div className='app container'>
-      <Header />
+      {/* <Header /> */}
       <Nav />
       <Routes>
           <Route path="/" element={<Home />}/>

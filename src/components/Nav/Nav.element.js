@@ -8,6 +8,8 @@ export const NavItems = styled.ul`
     border: 1px green solid;
     width: 300px;
     flex-grow: 1;
+    flex-direction: column;
+
 `
 export const NavItem = styled.li`
     list-style: none;
