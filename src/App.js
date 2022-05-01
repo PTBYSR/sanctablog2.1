@@ -8,14 +8,26 @@ import ListNewsPost from './Pages/AllNews/ListNewsPost/ListNewsPost';
 import ErrorPage from './Pages/Errorpage/ErrorPage';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav'
+import {
+  AppContainer,
+  LeftPillar,
+  RightPillar,
+  AppMain,
+} from './App.element'
+import { ReactComponent as Pillar } from './Pillar.svg'
 
 
 function App() {
   return (
     <>
+    <AppContainer className='flex'>
     <Router>
       <div className='page-wrapper'></div>
-      <div className='app container'>
+      <div className='old-page-wrapper'></div>
+      <LeftPillar >
+        <Pillar />
+      </LeftPillar>
+      <AppMain className='app container'>
       {/* <Header /> */}
       <Nav />
       <Routes>
@@ -27,8 +39,12 @@ function App() {
           </Route>
           <Route path="*" element={<ErrorPage />}/>
       </Routes>
-      </div>
+      </AppMain>
+      <RightPillar>
+        <Pillar />
+      </RightPillar>
     </Router>
+    </AppContainer>
     </>
   );
 }

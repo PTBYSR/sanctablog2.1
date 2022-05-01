@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Bookmark from './bookmark.png'
 
 export const NavSection = styled.nav`
     border: 1px pink solid;
@@ -12,12 +13,8 @@ export const NavItems = styled.ul`
 
 `
 export const NavItem = styled.li`
-    background-image: url("./bookmark.png");
+    background-image: url(${Bookmark});
+    background-repeat: no-repeat;
     list-style: none;
     text-transform: uppercase;
-`
-export const NewsCarousel = styled.div`
-    flex-grow: 5;
-    border: 1px yellow solid;
-    height: 100%;
 `
