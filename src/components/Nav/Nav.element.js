@@ -4,6 +4,9 @@ import Bookmark from './bookmark.png'
 export const NavSection = styled.nav`
     border: 1px pink solid;
     gap: 0rem;
+    position: absolute;
+    right: 0;
+    transform: rotate(-30deg);
 `
 export const NavItems = styled.ul`
     border: 1px green solid;
@@ -13,8 +16,15 @@ export const NavItems = styled.ul`
 
 `
 export const NavItem = styled.li`
-    background-image: url(${Bookmark});
+    /* background-image: url(${Bookmark}); */
     background-repeat: no-repeat;
     list-style: none;
+    border: 1px dashed black;
+    position: relative;
+`
+
+export const NavHome = styled.p`
     text-transform: uppercase;
+    position: absolute;
+    top: 0;
 `

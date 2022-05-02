@@ -18,7 +18,7 @@ function Home() {
   return (
     <>
     <Landing className='flex'>
-      <SideBar className='flex'>
+      {/* <SideBar className='flex'>
         <DateSection>
           <Date>in Nigeria 1st July, 2022</Date>
         </DateSection>
@@ -44,7 +44,7 @@ function Home() {
       </HeadlineSection>
       <TagSection className="flex">
         
-      </TagSection>
+      </TagSection> */}
     </Landing>
     </>
   )

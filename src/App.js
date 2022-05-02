@@ -25,7 +25,8 @@ function App() {
       <div className='page-wrapper'></div>
       <div className='old-page-wrapper'></div>
       <LeftPillar >
-        <Pillar />
+        {/* <Pillar /> */}
+        
       </LeftPillar>
       <AppMain className='app container'>
       {/* <Header /> */}
