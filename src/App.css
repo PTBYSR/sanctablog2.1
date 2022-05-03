@@ -19,7 +19,8 @@
 
   /* FONT-COLOR */
   --fc-dark: #2d2f2c;
-  --fc-light: #eedd99;
+  --fc-nav: #2d2f2c;
+  --fc-red: #eedd99;
   
   /* COMPONENTS */
   --border-small: ;
@@ -145,14 +146,6 @@ them using inline css */
 }
 
 /* colors */
-
-.bg-dark {
-  background-color: var(--clr-dark);
-}
-.bg-light {
-  background-color: var(--clr-light);
-}
-
 .text-light {
   color: var(--clr-light);
 }
