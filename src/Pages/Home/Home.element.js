@@ -5,13 +5,14 @@ export const Landing = styled.main`
     width: 100%;
     padding: 10px;
     gap: 0rem;
-    height: 500px; 
+    height: 100%; 
+    flex-direction: column;
 `
 export const LandingHeading = styled.div`
-    width: 1px solid pink;
-    height: 200px;
+    width: 100%;
+    border: 1px solid pink;
+    flex-grow: 1;
 `
-export const LandingImage = styled.div`
-    width: 1px solid blue;
-    height: 200px;
+export const Text = styled.p`
+    
 `

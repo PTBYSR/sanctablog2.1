@@ -3,17 +3,18 @@ import {
   Landing,
   LandingHeading,
   LandingImage,
+  Text,
 } from './Home.element'
+import scribe from './scribe.jpg';
+
 
 function Home() {
   return (
     <>
     <Landing className='flex'>
-      <LandingImage>
-        landing
-      </LandingImage>
       <LandingHeading>
-        landing
+        <img src={scribe} />
+        <Text></Text>
       </LandingHeading>
     </Landing>
     </>
