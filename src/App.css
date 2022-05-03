@@ -13,14 +13,16 @@
   /* Bold 700 */
 
   /* FONT-SIZES */
-  --fs-heading: 3rem;
-  --fs-primary: 1.375rem;
-  --fs-secondary: 1.125;
+  --fs-heading: 5.68rem;
+  --fs-news-heading: 1.875rem;
+  --fs-body: 1.375rem;
+  --fs-nav: 1.875;
+  --fs-trademark: 17.875;
 
   /* FONT-COLOR */
-  --fc-dark: #2d2f2c;
-  --fc-nav: #2d2f2c;
-  --fc-red: #eedd99;
+  --fc-dark: #231E19;
+  --fc-nav: #FFFFFF;
+  --fc-red: #C84828;
   
   /* COMPONENTS */
   --border-small: ;
@@ -146,17 +148,14 @@ them using inline css */
 }
 
 /* colors */
-.text-light {
-  color: var(--clr-light);
-}
 .text-dark {
-  color: var(--clr-dark);
+  color: var(--fc-dark);
 }
-.text-accent-dark {
-  color: var(--clr-accent-dark);
+.text-nav {
+  color: var(--fc-nav);
 }
-.text-accent-light {
-  color: var(--clr-accent-light);
+.text-red {
+  color: var(--fc-red);
 }
 
 /* typography */
@@ -185,25 +184,17 @@ them using inline css */
 .fs-heading {
   font-size: var(--fs-heading);
 }
-.fs-primary {
-  font-size: var(--fs-primary);
+.fs-news-heading {
+  font-size: var(--fs-news-heading);
 }
-.fs-secondary {
-  font-size: var(--fs-secondary);
+.fs-body {
+  font-size: var(--fs-body);
 }
-
-.fw-semibold {
-  font-weight: var(--fw-semi-bold);
+.fs-nav {
+  font-size: var(--fs-nav);
 }
-.fw-regular {
-  font-weight: var(--fw-regular);
-}
-
-.fc-dark {
-  color: var(--fc-dark);
-}
-.fc-light {
-  color: var(--fc-light);
+.fs-trademark {
+  font-size: var(--fs-trademark);
 }
 
 .page-wrapper {
