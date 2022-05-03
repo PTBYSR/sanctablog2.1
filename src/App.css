@@ -1,3 +1,32 @@
+:root {
+
+  /* FONT-FAMILY*/
+  --ff-cabazon: "CabazonW01-Regular";
+  --ff-wonderland: "Beyond Wonderland";
+
+  /* FONT-WEIGHT */
+  --fw-semi-bold: 600;
+  --fw-regular: 400;
+  /* Regular 400 */
+  /* Medium 500 */
+  /* SemiBold 600 */
+  /* Bold 700 */
+
+  /* FONT-SIZES */
+  --fs-heading: 3rem;
+  --fs-primary: 1.375rem;
+  --fs-secondary: 1.125;
+
+  /* FONT-COLOR */
+  --fc-dark: #2d2f2c;
+  --fc-light: #eedd99;
+  
+  /* COMPONENTS */
+  --border-small: ;
+  --border-big: ;
+  --link-icon: var('./assets/linkicon.svg')
+}
+
 /* RESET CSS */
 
 /* Box sizing */
@@ -115,6 +144,75 @@ them using inline css */
   border: 0;
 }
 
+/* colors */
+
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+.bg-light {
+  background-color: var(--clr-light);
+}
+
+.text-light {
+  color: var(--clr-light);
+}
+.text-dark {
+  color: var(--clr-dark);
+}
+.text-accent-dark {
+  color: var(--clr-accent-dark);
+}
+.text-accent-light {
+  color: var(--clr-accent-light);
+}
+
+/* typography */
+
+.ff-cabazon {
+  font-family: var(--ff-cabazon);
+}
+.ff-wonderland {
+  font-family: var(--ff-wonderland);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-heading {
+  font-size: var(--fs-heading);
+}
+.fs-primary {
+  font-size: var(--fs-primary);
+}
+.fs-secondary {
+  font-size: var(--fs-secondary);
+}
+
+.fw-semibold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fc-dark {
+  color: var(--fc-dark);
+}
+.fc-light {
+  color: var(--fc-light);
+}
+
 .page-wrapper {
   position: absolute;
   top: 0;
@@ -144,6 +242,5 @@ them using inline css */
 }
 
 .app {
-  height: 100%;
   border: 1px blue solid;
 }

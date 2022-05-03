@@ -16,7 +16,6 @@ import {
 } from './App.element'
 import { ReactComponent as Pillar } from './Pillar.svg'
 
-
 function App() {
   return (
     <>
@@ -25,8 +24,7 @@ function App() {
       <div className='page-wrapper'></div>
       <div className='old-page-wrapper'></div>
       <LeftPillar >
-        {/* <Pillar /> */}
-        
+          <Pillar style={{visibility:'hidden'}}/>
       </LeftPillar>
       <AppMain className='app container'>
       {/* <Header /> */}
@@ -42,7 +40,7 @@ function App() {
       </Routes>
       </AppMain>
       <RightPillar>
-        <Pillar />
+        <Pillar style={{visibility:'hidden'}}/>
       </RightPillar>
     </Router>
     </AppContainer>

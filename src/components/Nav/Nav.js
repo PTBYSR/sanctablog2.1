@@ -12,7 +12,7 @@ function Nav() {
           <NavItem>
             <BookMark  />
             {/* <img src={image} alt="bookmark" /> */}
-            <NavHome>Home</NavHome>  
+            <NavHome className='ff-cabazon'>Home</NavHome>  
           </NavItem>
         </Link>
         <Link to="/about">
