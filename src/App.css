@@ -26,6 +26,7 @@
   --fc-red: #C84828;
   
   /* COMPONENTS */
+  --img-resize: 9vw;
   --border-small: ;
   --border-big: ;
   --link-icon: var('./assets/linkicon.svg')
@@ -198,6 +199,10 @@ them using inline css */
   font-size: var(--fs-trademark);
 }
 
+.resize {
+  width: var(--img-resize);
+}
+
 .page-wrapper {
   position: absolute;
   top: 0;
@@ -228,4 +233,5 @@ them using inline css */
 
 .app {
   border: 1px blue solid;
+  height: 100vh;
 }

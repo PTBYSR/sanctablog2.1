@@ -1,6 +1,6 @@
 import React from 'react'
 import { NewsPostData } from '../NewsPost/NewsPostData'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function ListNewsPost() {
     const navigate = useNavigate();
@@ -9,14 +9,13 @@ function ListNewsPost() {
         {NewsPostData.map((post) => {
             return(
                 <div
+                    className='ff-cabazon'
                     style={{border: '1px solid pink'}}
                     onClick={() => {
                         navigate(`/allnews/${post.id}`)
-                        alert('hey')
                     }}
                 >
-                    <h1>{post.title}</h1>
-                    <h1>{post.description}</h1>
+                        <h1>{post.title}</h1>
                 </div>
             )
         })}

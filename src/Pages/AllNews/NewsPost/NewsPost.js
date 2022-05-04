@@ -1,17 +1,19 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { Route, Link, useParams } from 'react-router-dom';
 import { 
     NewsPostSection,
  }  from './NewsPost.element'
  import { NewsPostData } from './NewsPostData'
 
+
+
 function NewsPost() {
   const { id } = useParams();
   return (
     <NewsPostSection className='flex '>
-      <h1>{NewsPostData[id - 1].title}</h1>
-      <h1>{NewsPostData[id - 1].image} hiyo</h1>
-      <p>{NewsPostData[id - 1].description}</p>
+          <h1 className='ff-cabazon fs-news-heading text-red'>{NewsPostData[id - 1].title}</h1>
+          <p className='ff-cabazon fs-body'>{NewsPostData[id - 1].description}</p>
+          <h1>{NewsPostData[id - 1].image}</h1>
     </NewsPostSection>
   )
 }

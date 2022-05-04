@@ -10,9 +10,9 @@ function Nav() {
       <NavItems className="flex">
         <Link to="/">
           <NavItem>
-            <BookMark  />
+            <BookMark  opacity=''/>
             {/* <img src={image} alt="bookmark" /> */}
-            <NavHome className='ff-cabazon'>Home</NavHome>  
+            <NavHome >Home</NavHome>  
           </NavItem>
         </Link>
         <Link to="/about">

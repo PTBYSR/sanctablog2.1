@@ -1,25 +1,21 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link, useParams} from 'react-router-dom'
-import { 
-  AllNewsSection,
- } from './AllNews.element';
- import NewsPost from './NewsPost/NewsPost'
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
+import { AllNewsSection, AllNewsHeading } from "./AllNews.element";
+import ListNewsPost from "./ListNewsPost/ListNewsPost";
+import AL from "./a-illuminated.png";
 
 function AllNews() {
-  let {id} = useParams();
   return (
     <AllNewsSection>
-            <Link to='allnews/'>
-              hi
-            </Link>
-            <Link to='allnews/'>
-              hi
-            </Link>
-            <Link to='allnews/'>
-              hi
-            </Link>
+      <AllNewsHeading className="flex">
+        <img src={AL} alt="A" />
+        <div>
+          <h1 className="fs-news-heading ff-cabazon text-red">ll News</h1>
+          <ListNewsPost />
+        </div>
+      </AllNewsHeading>
     </AllNewsSection>
-  )
+  );
 }
 
-export default AllNews
+export default AllNews;

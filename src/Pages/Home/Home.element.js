@@ -12,7 +12,11 @@ export const LandingHeading = styled.div`
     width: 100%;
     border: 1px solid pink;
     flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `
 export const Text = styled.h1`
+    text-align: center;
     
 `
