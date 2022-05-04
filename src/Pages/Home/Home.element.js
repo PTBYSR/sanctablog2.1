@@ -13,6 +13,6 @@ export const LandingHeading = styled.div`
     border: 1px solid pink;
     flex-grow: 1;
 `
-export const Text = styled.p`
+export const Text = styled.h1`
     
 `

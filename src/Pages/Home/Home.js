@@ -5,7 +5,7 @@ import {
   LandingImage,
   Text,
 } from './Home.element'
-import scribe from './scribe.jpg';
+import scribe from './scribe.svg';
 
 
 function Home() {
@@ -14,7 +14,7 @@ function Home() {
     <Landing className='flex'>
       <LandingHeading>
         <img src={scribe} />
-        <Text></Text>
+        <Text className='fs-heading ff-cabazon text-dark'>Sancta's <br/> Manuscripts</Text>
       </LandingHeading>
     </Landing>
     </>
